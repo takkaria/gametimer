@@ -41,8 +41,8 @@ public class GameTimer extends Activity
 			mHandler.removeCallbacks(mGoGreen);
 			mHandler.removeCallbacks(mGoRed);
 
-			mBackground.startTransition(10000);
-			mHandler.postDelayed(mTimeUp, 10000);
+			mBackground.startTransition(60000);
+			mHandler.postDelayed(mTimeUp, 60000);
 		}
 	};
 
