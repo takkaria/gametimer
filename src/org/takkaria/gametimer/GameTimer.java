@@ -1,4 +1,4 @@
-package com.example.helloandroid;
+package org.takkaria.gametimer;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -13,7 +13,7 @@ import android.widget.Button;
 import java.util.Calendar;
 import java.lang.Runnable;
 
-public class HelloAndroid extends Activity
+public class GameTimer extends Activity
 {
 	private Handler mHandler = new Handler();
 	private TransitionDrawable mBackground;
