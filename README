@@ -1,0 +1,29 @@
+GameTimer
+---------
+
+So, the story goes like this:
+
+One cold, dark winter, deep in the depths of the suburbs of Greater Manchester,
+a family were playing cards.  The game they were playing was a variant of
+"Rummy", called "Rummikub".  (Normally rummikub is a game that involves buying
+a load of plastic and an instruction manual in a cardboard box, but you can
+play it with cards, too.  Google it if you don't believe me.)
+
+It's in the rules of the game that each person gets a minute for their turn.
+This is actually quite a good game mechanic, as otherwise the game can get a
+little bit long in the tooth.  However, it's very difficult to practically
+enforce, with people who are told to hurry up sometimes taking exception,
+other people being treated with leniency because they win less, and so forth.
+
+The solution?  A timer!
+
+Now, obviously there are already timers in the world.  This one is a bit
+different, though: run it on your Android phone, put it in the middle of the
+table, and when you start your turn, tap the screen.  This resets it to green.
+As the minute continues, it slowly turns to red, and then after 60 seconds
+pulsates gently to remind you.  Next!
+
+That's it, really.  It would be cool to have a customisable time delay, but
+other than that it's pretty basic and self-contained.
+
+-- Andi Sidwell <andi@takkaria.org>
