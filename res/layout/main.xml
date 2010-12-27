@@ -4,5 +4,6 @@
 		android:id="@+id/reset"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="@drawable/reset"
-		android:text="Reset" />
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:text="Start" />

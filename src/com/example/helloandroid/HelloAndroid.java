@@ -27,25 +27,27 @@ public class HelloAndroid extends Activity
 		Button button = (Button) findViewById(R.id.reset);
 		button.setOnClickListener(mResetListener);
 
-		mBackground = (TransitionDrawable) getResources().getDrawable(R.drawable.reset);
-//		mBackground.setCrossFadeEnabled(true);
+		button.setBackgroundResource(R.drawable.reset);
+		mBackground = (TransitionDrawable) button.getBackground();
+		mBackground.setCrossFadeEnabled(true);
 	}
 
 	private OnClickListener mResetListener = new OnClickListener() {
 		public void onClick(View v) {
 			Button button = (Button) findViewById(R.id.reset);			
-			button.setText("Reset");
+			button.setText("");
 
 			mHandler.removeCallbacks(mTriggerTimer);
-			mHandler.postDelayed(mTriggerTimer, 5000);
+
+			mBackground.startTransition(60000);
+			mHandler.postDelayed(mTriggerTimer, 60000);
 		}
 	};
 
 	private Runnable mTriggerTimer = new Runnable() {
 		public void run() {
 			Button button = (Button) findViewById(R.id.reset);			
-			mBackground.startTransition(500);
-			button.setText("Finished");
+			button.setText("Restart");
 		}
 	};
 }
