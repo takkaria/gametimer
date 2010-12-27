@@ -37,17 +37,36 @@ public class HelloAndroid extends Activity
 			Button button = (Button) findViewById(R.id.reset);			
 			button.setText("");
 
-			mHandler.removeCallbacks(mTriggerTimer);
+			mHandler.removeCallbacks(mTimeUp);
+			mHandler.removeCallbacks(mGoGreen);
+			mHandler.removeCallbacks(mGoRed);
 
-			mBackground.startTransition(60000);
-			mHandler.postDelayed(mTriggerTimer, 60000);
+			mBackground.startTransition(10000);
+			mHandler.postDelayed(mTimeUp, 10000);
 		}
 	};
 
-	private Runnable mTriggerTimer = new Runnable() {
+	private Runnable mTimeUp = new Runnable() {
 		public void run() {
 			Button button = (Button) findViewById(R.id.reset);			
 			button.setText("Restart");
+
+			mGoGreen.run();
 		}
 	};
+
+	private Runnable mGoGreen = new Runnable() {
+		public void run() {
+			mBackground.reverseTransition(1000);
+			mHandler.postDelayed(mGoRed, 2000);
+		}
+	};
+
+	private Runnable mGoRed = new Runnable() {
+		public void run() {
+			mBackground.reverseTransition(1000);
+			mHandler.postDelayed(mGoGreen, 2000);
+		}
+	};
+
 }
