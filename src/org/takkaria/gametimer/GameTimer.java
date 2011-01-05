@@ -1,19 +1,14 @@
 package org.takkaria.gametimer;
 
 import android.app.Activity;
-import android.app.AlarmManager;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.CountDownTimer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.content.res.Configuration;
 import android.widget.Button;
 
-import java.util.Calendar;
 import java.lang.Runnable;
 
 public class GameTimer extends Activity
