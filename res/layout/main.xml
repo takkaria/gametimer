@@ -8,4 +8,4 @@
 		android:textStyle="bold"
 		android:textColor="#ff444444"
 		android:background="#000000"
-		android:text="Start"/>
+		android:text="Start" />
